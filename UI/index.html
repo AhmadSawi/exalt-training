@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Cisco Log Parser</title>
+
+	<link rel="stylesheet" href="styles.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<script src="script.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css">
+  
+	<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+
+	<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
+</head>
+
+<body>
+
+<h1>Cisco Log Parser</h1>
+<button onclick="refil()" style="margin: 5px">Re-Populate</button> <br>
+
+
+<div class="search">
+  <input id="type_field" type="text" placeholder="Type Search. ex: INFO" size="35"/>
+  <button onclick="type_search()">Filter</button>
+
+  <br />
+
+  <input id="service_field" type="text" placeholder="serice Search. ex: spf-service-manager" size="35"/>
+  <button onclick="service_search()">Filter</button>
+
+  <br />
+
+  <input id="class_field" type="text" placeholder="class Search. ex: USER-ACCOUNTING" size="35"/>
+  <button onclick="class_search()">Filter</button>
+
+  <br />
+
+  <input id="thread_field" type="text" placeholder="thread Search. ex: qtp399534175-607" size="35"/>
+  <button onclick="thread_search()">Filter</button>
+
+  <br>
+
+  Date From: <input id="date_from" type="date" name="from" value="2018-07-18" min="2018-07-01" max="2020-07-01" />
+
+  To: <input id="date_to" type="date" name="to" value="2018-07-23" min="2018-07-01" max="2020-07-01" />
+  <button onclick="date_search()">Filter</button>
+
+</div>
+
+<hr>
+
+<div class="table">
+<table id="table_id" class="display" style="width:100%; min-width: 100%;">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Date</th>
+            <th>Service</th>
+            <th>Class</th>
+            <th>Thread</th>
+            <th>Type</th>
+            <th>Message</th>
+        </tr>
+    </thead>
+    <tfoot>
+        <tr>
+            <th>ID</th>
+            <th>Date</th>
+            <th>Service</th>
+            <th>Class</th>
+            <th>Thread</th>
+            <th>Type</th>
+            <th>Message</th>
+        </tr>
+    </tfoot>
+</table>
+</div>
+
+
+
+</body>
+</html>
