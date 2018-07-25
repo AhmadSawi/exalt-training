@@ -4,6 +4,8 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 import org.junit.runners.Suite.SuiteClasses;
 
+//testsuite
+
 @RunWith(Suite.class)
 @SuiteClasses(
 		{ IdSearchTest.class,
