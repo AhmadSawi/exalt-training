@@ -18,7 +18,7 @@ in two log files named "spf-device-manager" and "spf-service-manager"
 
 The data base in this project has one table called 'info' with the following structure:
 +-------------+---------------+------+-----+---------+----------------+
-| Field       | Type          | Null | Key | Default | Extra       |
+| Field       | Type          | Null | Key | Default | Extra          |
 +-------------+---------------+------+-----+---------+----------------+
 | id          | int(11)       | NO   | PRI | NULL    | auto_increment |
 | time        | datetime      | YES  |     | NULL    |                |
