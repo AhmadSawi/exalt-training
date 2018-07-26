@@ -1,3 +1,7 @@
+/*
+ * RESTful API implementation
+ * */
+
 package com.sawi.parser.resources;
 
 import java.io.FileNotFoundException;
@@ -19,6 +23,7 @@ import com.sawi.parser.main.FileHandeler;
 import com.sawi.parser.model.Log;
 import com.sawi.parser.service.LogService;
 
+//log is the main path
 @Path("log")
 public class LogResource{
 	
@@ -40,12 +45,17 @@ public class LogResource{
 		   return service.byId(id);
 	}
 	
+	//returns all the exceptions in the logs
 	@GET
 	@Path("exceptions")
 	@Produces(MediaType.APPLICATION_JSON)
 	public List<Log> exceptionLog(){
 		return findExceptionLog(getAll());
 	}
+	
+	/*
+	 * Filtering by various feilds
+	 **/
 	
 	
 	@GET
@@ -85,6 +95,7 @@ public class LogResource{
 		return service.byDateFromTo(fromDate.getTime(), toDate.getTime());
 	}
 	
+	//using the /update path re-reads from the log files and adds them to the database
 	@GET
 	@Path("update")
 	@Produces(MediaType.TEXT_PLAIN)
@@ -98,7 +109,7 @@ public class LogResource{
 		
 	}
 			
-	
+	//exceptions are messages between two error logs stored in the message feild in the database
 	private List<Log> findExceptionLog(List<Log> logList){
 		List<Log> exceptionList = new ArrayList<Log>();
 		for(int i=0; i<logList.size(); i++){
@@ -108,6 +119,7 @@ public class LogResource{
 		return exceptionList;	
 	}
 	
+	//we need it for the update action
 	public void saveToDB() throws FileNotFoundException{
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
 			

@@ -15,6 +15,9 @@ import com.sawi.parser.model.Log;
 import com.sawi.parser.resources.LogResource;
 import com.sawi.parser.service.LogService;
 
+/*
+ * JUnit testing using Mockito
+ * */
 
 @RunWith(MockitoJUnitRunner.class)
 public class LogResourceTester {
@@ -28,6 +31,8 @@ public class LogResourceTester {
 	@SuppressWarnings("deprecation")
 	@Test
 	public void byIDTest() {	
+		
+		//values for the log of ID=1 in the database
 		Log expected = new Log();
 		expected.setClassName("c.c.m.c.f.CasCustomAuthenticationFilter");
 		expected.setServiceName("spf-service-manager");

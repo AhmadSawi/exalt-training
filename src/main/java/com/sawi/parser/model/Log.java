@@ -1,3 +1,7 @@
+/*
+ * Log POJO
+ * */
+
 package com.sawi.parser.model;
 
 import java.sql.Timestamp;

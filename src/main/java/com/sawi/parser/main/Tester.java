@@ -1,3 +1,5 @@
+
+
 package com.sawi.parser.main;
 
 import java.io.FileNotFoundException;
@@ -11,22 +13,14 @@ import com.sawi.parser.service.LogService;
 public class Tester {
 
 	public static void main(String[] args) throws FileNotFoundException {
-		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
 		
-		//LogService service = context.getBean(LogService.class);
-		saveToDB();
+		//saveToDB();
 		
-		//List<Log> list = service.list();
-		
-		//for(Log log : list){
-		//	System.out.println("log List::"+log);
-		//}
-
-		context.close();	
-
-
 	}
 	
+	/*
+	 * main method that parses the log objects into the database using the service we built
+	 * */
 	public static void saveToDB() throws FileNotFoundException{
 	ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
 		

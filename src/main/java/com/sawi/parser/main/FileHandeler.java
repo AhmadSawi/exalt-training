@@ -1,3 +1,9 @@
+/*
+ * Class responsible for dealing with the .log files. fetching data and parsing it
+ * 	into objects of the type log 
+ * */
+
+
 package com.sawi.parser.main;
 
 import java.io.File;

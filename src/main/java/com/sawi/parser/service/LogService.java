@@ -1,3 +1,7 @@
+/*
+ * Service for Hibernate ORM implementation
+ * */
+
 package com.sawi.parser.service;
 
 import java.util.List;
