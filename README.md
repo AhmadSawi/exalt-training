@@ -1,5 +1,6 @@
 # Please view this document in RAW mode for the desired look
 
+
 # exalt-training
 
 This is the Cisco Log Parser project worked on during training at Exalt in the summer of 2018
