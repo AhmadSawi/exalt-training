@@ -1,5 +1,6 @@
 /*
  * Log POJO
+ * 
  * */
 
 package com.sawi.parser.model;
