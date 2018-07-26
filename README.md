@@ -6,6 +6,7 @@
 This is the Cisco Log Parser project worked on during training at Exalt in the summer of 2018
 
 
+
 # Log Files
 
 The logs in the log files have the structure of:
@@ -32,9 +33,17 @@ The data base in this project has one table called 'info' with the following str
 +-------------+---------------+------+-----+---------+----------------+
 
 
+# Implementation specifications
+
+- The project was developed in the Eclipse IDE environment. using a maven project structure. 
+- Hibernate ORM was used to do the connection and operations with the database.
+- Also the project implemented Spring framework for the fetching of the service beans that run the Hibernate ORM.
+- RESTful API was implemented using the Jersey framework to achive the backend aspect. the API uses http GET requests and returns JSONs containing required log objects. 
+The API allows for multiple searches among the recorded logs, including: search by ID, by Class, Thread, Type, filtering logs for those with exception, and filtering logs between certian dates. 
+- UI was implemented mainly using the JQuery widget "DataTables" and some filtering feilds made manualy using JavaScript.
+- Continous integration was also implemented using Jenkins and Git. 
+
 # UI
 usinh HTML, CSS, and JS we created a simple website to view and interact with the logs
 you can see a screenshot of it in the UI-screenshot file
-\\
-
 
