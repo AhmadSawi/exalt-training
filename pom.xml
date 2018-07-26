@@ -79,7 +79,7 @@
 		</dependency>
 
 
-		<!-- Hibernate -->
+		<!-- Hibernateeee -->
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-entitymanager</artifactId>
