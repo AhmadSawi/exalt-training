@@ -29,3 +29,7 @@ The data base in this project has one table called 'info' with the following str
 | servicename | varchar(50)      | YES  |     | NULL    |                |
 +-------------+------------------+------+-----+---------+----------------+
 
+
+# UI
+usinh HTML, CSS, and JS we created a simple website to view and interact with the logs
+you can see a screenshot of it in the UI-screenshot file
