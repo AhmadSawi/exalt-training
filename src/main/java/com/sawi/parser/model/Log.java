@@ -122,7 +122,7 @@ public class Log {
 	public String toString() {
 		return "Log [id=" + id + ", time=" + time + ", ms=" + ms + ", type=" + type + ", threadName=" + threadName
 				+ ", className=" + className + ", message=" + message + ", exception=" + exception + ", serviceName="
-				+ serviceName + "]";
+				+ serviceName + "] ";
 	}
 
 }
