@@ -1,4 +1,4 @@
-# Please view this document in RAW mode for the best look
+# Please view this document in RAW mode for the desired look
 
 # exalt-training
 
